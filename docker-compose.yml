@@ -1,0 +1,12 @@
+services:
+  openai-slack:
+    restart: always
+    build: ./
+    image: openai-slack
+    container_name: openai-slack
+    env_file:
+      - .env.deploy
+    logging:
+      options:
+        max-size: "100k"
+        max-file: "3"
