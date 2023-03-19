@@ -18,7 +18,10 @@
             "bot": [
                 "app_mentions:read",
                 "chat:write",
-                "chat:write.customize"
+                "chat:write.customize",
+                "channels:history",
+                "groups:history",
+                "im:history"
             ]
         }
     },
